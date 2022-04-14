@@ -67,8 +67,8 @@ function addSong() {
   fetch(allSongsApi, {
     method: "POST",
     headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
+      Accept: "application/json", // receiving json from backend
+      "Content-Type": "application/json", // sending json to backend
     },
     body: JSON.stringify({
       SongTitle: song,
